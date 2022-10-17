@@ -1,0 +1,45 @@
+button{
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 700;
+    color: aqua;
+    background-color: tomato;
+    border: none;
+    padding: 14px 16px;
+    border-radius: 10px;
+    /* display: block; */
+    margin-top: 20px;
+}
+h1{
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 700;
+    color: aqua;
+    background-color: blueviolet;
+    padding: 40px;
+    text-align: center;
+}
+input{
+    padding: 20px;
+    color: chocolate;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: block;
+    margin-top: 30px;
+}
+h4{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 700;
+    color: crimson;
+    padding: 20px;
+    text-align: center;
+}
+h5{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    color: crimson;
+    padding: 20px;
+    text-align: center;
+}

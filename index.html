@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1>Welcome to Javascript</h1>
+
+    <input id="name" type="text" placeholder="Enter Your Name" onkeyup="welcome()">
+    <input type="number" id="numbers" placeholder="Enter Your Marks" onkeyup="showgrade()">
+    <!-- <button id="btn" onclick="Welcome()">submit</button> -->
+    <h4 id="wlc"></h4>
+    <h5 id="grade"></h5>
+    <script>
+        function welcome(){
+            var username = document.getElementById('name').value;
+            document.getElementById('wlc').innerHTML='Welcome ' + username;
+
+            if(username.length <= 5){
+                document.getElementById('wlc').style.color='blue';
+            }else if(username.length >= 10){
+                document.getElementById('wlc').style.color='purple';
+            }else{
+                document.getElementById('wlc').style.color='orange'
+            }
+        }
+
+        function showgrade(){
+            var marks = document.getElementById('numbers').value;
+            document.getElementById('grade').innerHTML='Your Grade is ' + marks;
+
+            if(marks <33){
+                document.getElementById('grade').innerHTML='Your Grade is Fail';
+            }else if(marks <=39){
+                document.getElementById('grade').innerHTML='Your Grade is E (33 to 39)'
+            }else if(marks <=49){
+                document.getElementById('grade').innerHTML='Your Grade is D (40 to 49)'
+            }else if(marks <=59){
+                document.getElementById('grade').innerHTML='Your Grade is C (50 to 59)'
+            }else if(marks <=69){
+                document.getElementById('grade').innerHTML='Your Grade is B (60 to 69)'
+            }else if(marks <=79){
+                document.getElementById('grade').innerHTML='Your Grade is A- (70 to 79)'
+            }else if(marks <=89){
+                document.getElementById('grade').innerHTML='Your Grade is A (80 to 89)'
+            }else if(marks <=100){
+                document.getElementById('grade').innerHTML='Your Grade is A+ (90 to 100)'
+            }
+        }
+
+    </script>
+</body>
+</html>
